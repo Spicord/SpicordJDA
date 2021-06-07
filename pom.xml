@@ -5,7 +5,7 @@
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>net.dv8tion</groupId>
+    <groupId>org.spicord</groupId>
     <artifactId>JDA</artifactId>
     <version>4.2.1</version>
 
