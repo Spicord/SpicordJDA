@@ -18,12 +18,12 @@ package net.dv8tion.jda.internal.utils;
 
 import org.apache.commons.collections4.map.CaseInsensitiveMap;
 import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
+//import org.slf4j.LoggerFactory;
 
 import java.io.PrintWriter;
 import java.io.StringWriter;
 import java.util.Map;
-import java.util.ServiceLoader;
+//import java.util.ServiceLoader;
 
 /**
  * This class serves as a LoggerFactory for JDA's internals.
@@ -39,41 +39,41 @@ public class JDALogger
      * <code>SLF4JServiceProvider</code> implementation (1.8.x+) was found. If false, JDA will use its fallback logger.
      * <br>This variable is initialized during static class initialization.
      */
-    public static final boolean SLF4J_ENABLED;
-    static
-    {
-        boolean tmp = false;
-
-        try
-        {
-            Class.forName("org.slf4j.impl.StaticLoggerBinder");
-
-            tmp = true;
-        }
-        catch (ClassNotFoundException eStatic)
-        {
-            // there was no static logger binder (SLF4J pre-1.8.x)
-
-            try
-            {
-                Class<?> serviceProviderInterface = Class.forName("org.slf4j.spi.SLF4JServiceProvider");
-
-                // check if there is a service implementation for the service, indicating a provider for SLF4J 1.8.x+ is installed
-                tmp = ServiceLoader.load(serviceProviderInterface).iterator().hasNext();
-            }
-            catch (ClassNotFoundException eService)
-            {
-                // there was no service provider interface (SLF4J 1.8.x+)
-
-                //prints warning of missing implementation
-                LoggerFactory.getLogger(JDALogger.class);
-
-                tmp = false;
-            }
-        }
-
-        SLF4J_ENABLED = tmp;
-    }
+//    public static final boolean SLF4J_ENABLED;
+//    static
+//    {
+//        boolean tmp = false;
+//
+//        try
+//        {
+//            Class.forName("org.slf4j.impl.StaticLoggerBinder");
+//
+//            tmp = true;
+//        }
+//        catch (ClassNotFoundException eStatic)
+//        {
+//            // there was no static logger binder (SLF4J pre-1.8.x)
+//
+//            try
+//            {
+//                Class<?> serviceProviderInterface = Class.forName("org.slf4j.spi.SLF4JServiceProvider");
+//
+//                // check if there is a service implementation for the service, indicating a provider for SLF4J 1.8.x+ is installed
+//                tmp = ServiceLoader.load(serviceProviderInterface).iterator().hasNext();
+//            }
+//            catch (ClassNotFoundException eService)
+//            {
+//                // there was no service provider interface (SLF4J 1.8.x+)
+//
+//                //prints warning of missing implementation
+//                LoggerFactory.getLogger(JDALogger.class);
+//
+//                tmp = false;
+//            }
+//        }
+//
+//        SLF4J_ENABLED = tmp;
+//    }
 
     private static final Map<String, Logger> LOGS = new CaseInsensitiveMap<>();
 
@@ -94,9 +94,9 @@ public class JDALogger
     {
         synchronized (LOGS)
         {
-            if (SLF4J_ENABLED)
-                return LoggerFactory.getLogger(name);
-            return LOGS.computeIfAbsent(name, SimpleLogger::new);
+//            if (SLF4J_ENABLED)
+//                return LoggerFactory.getLogger(name);
+            return LOGS.computeIfAbsent(name, org.spicord.log.LoggerFactory::getLogger);
         }
     }
 
@@ -113,12 +113,13 @@ public class JDALogger
      */
     public static Logger getLog(Class<?> clazz)
     {
-        synchronized (LOGS)
-        {
-            if (SLF4J_ENABLED)
-                return LoggerFactory.getLogger(clazz);
-            return LOGS.computeIfAbsent(clazz.getName(), (n) -> new SimpleLogger(clazz.getSimpleName()));
-        }
+//        synchronized (LOGS)
+//        {
+//            if (SLF4J_ENABLED)
+//                return LoggerFactory.getLogger(clazz);
+//            return LOGS.computeIfAbsent(clazz.getName(), (n) -> new SimpleLogger(clazz.getSimpleName()));
+//        }
+        return getLog(clazz.getName());
     }
 
     /**
