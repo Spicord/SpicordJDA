@@ -18,7 +18,7 @@ package net.dv8tion.jda.internal.utils;
 
 import net.dv8tion.jda.api.utils.ClosableIterator;
 import net.dv8tion.jda.api.utils.cache.CacheView;
-import org.slf4j.Logger;
+import org.spicord.log.Logger;
 
 import java.util.HashSet;
 import java.util.Iterator;

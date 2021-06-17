@@ -37,7 +37,7 @@ import net.dv8tion.jda.internal.JDAImpl;
 import net.dv8tion.jda.internal.managers.AudioManagerImpl;
 import net.dv8tion.jda.internal.utils.IOUtil;
 import net.dv8tion.jda.internal.utils.JDALogger;
-import org.slf4j.Logger;
+import org.spicord.log.Logger;
 import tomp2p.opuswrapper.Opus;
 
 import javax.annotation.Nonnull;

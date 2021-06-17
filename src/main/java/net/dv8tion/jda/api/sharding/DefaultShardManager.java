@@ -41,7 +41,7 @@ import net.dv8tion.jda.internal.utils.config.SessionConfig;
 import net.dv8tion.jda.internal.utils.config.ThreadingConfig;
 import net.dv8tion.jda.internal.utils.config.sharding.*;
 import okhttp3.OkHttpClient;
-import org.slf4j.Logger;
+import org.spicord.log.Logger;
 
 import javax.annotation.Nonnull;
 import javax.annotation.Nullable;

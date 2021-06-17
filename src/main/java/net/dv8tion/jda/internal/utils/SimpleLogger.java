@@ -16,11 +16,11 @@
 
 package net.dv8tion.jda.internal.utils;
 
-import org.slf4j.helpers.FormattingTuple;
-import org.slf4j.helpers.MarkerIgnoringBase;
-import org.slf4j.helpers.MessageFormatter;
-import org.slf4j.helpers.Util;
-import org.slf4j.spi.LocationAwareLogger;
+/*import org.spicord.log.helpers.FormattingTuple;
+import org.spicord.log.helpers.MarkerIgnoringBase;
+import org.spicord.log.helpers.MessageFormatter;
+import org.spicord.log.helpers.Util;
+import org.spicord.log.spi.LocationAwareLogger;
 
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
@@ -436,3 +436,4 @@ class SimpleLogger extends MarkerIgnoringBase {
         log(LOG_LEVEL_ERROR, msg, t);
     }
 }
+*/

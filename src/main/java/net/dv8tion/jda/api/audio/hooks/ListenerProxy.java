@@ -18,8 +18,8 @@ package net.dv8tion.jda.api.audio.hooks;
 
 import net.dv8tion.jda.api.audio.SpeakingMode;
 import net.dv8tion.jda.api.entities.User;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
+import org.spicord.log.Logger;
+import org.spicord.log.LoggerFactory;
 
 import javax.annotation.Nonnull;
 import java.util.EnumSet;

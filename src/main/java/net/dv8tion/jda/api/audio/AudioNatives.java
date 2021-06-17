@@ -18,7 +18,7 @@ package net.dv8tion.jda.api.audio;
 
 import club.minnced.opus.util.OpusLibrary;
 import net.dv8tion.jda.internal.utils.JDALogger;
-import org.slf4j.Logger;
+import org.spicord.log.Logger;
 
 import java.io.IOException;
 

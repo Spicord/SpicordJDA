@@ -29,7 +29,7 @@ import okhttp3.MediaType;
 import okhttp3.OkHttpClient;
 import okhttp3.RequestBody;
 import okhttp3.internal.http.HttpMethod;
-import org.slf4j.Logger;
+import org.spicord.log.Logger;
 import org.spicord.log.MDC;
 
 import javax.net.ssl.SSLPeerUnverifiedException;

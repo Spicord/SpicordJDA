@@ -1,10 +1,6 @@
 package org.spicord.log;
 
-import org.slf4j.helpers.MarkerIgnoringBase;
-
-public class NOPLogger extends MarkerIgnoringBase {
-
-    private static final long serialVersionUID = 1L;
+public class NOPLogger implements Logger {
 
     @Override
     public void debug(String msg) {}

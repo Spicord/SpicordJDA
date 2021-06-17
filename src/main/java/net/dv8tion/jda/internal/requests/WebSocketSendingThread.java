@@ -25,7 +25,7 @@ import net.dv8tion.jda.api.utils.data.DataObject;
 import net.dv8tion.jda.internal.JDAImpl;
 import net.dv8tion.jda.internal.audio.ConnectionRequest;
 import net.dv8tion.jda.internal.audio.ConnectionStage;
-import org.slf4j.Logger;
+import org.spicord.log.Logger;
 
 import java.util.Queue;
 import java.util.concurrent.Future;

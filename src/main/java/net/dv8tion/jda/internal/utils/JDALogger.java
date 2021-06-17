@@ -17,8 +17,8 @@
 package net.dv8tion.jda.internal.utils;
 
 import org.apache.commons.collections4.map.CaseInsensitiveMap;
-import org.slf4j.Logger;
-//import org.slf4j.LoggerFactory;
+import org.spicord.log.Logger;
+//import org.spicord.log.LoggerFactory;
 
 import java.io.PrintWriter;
 import java.io.StringWriter;

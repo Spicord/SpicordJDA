@@ -33,7 +33,7 @@ import net.dv8tion.jda.internal.entities.MemberImpl;
 import net.dv8tion.jda.internal.entities.UserImpl;
 import net.dv8tion.jda.internal.utils.Helpers;
 import net.dv8tion.jda.internal.utils.JDALogger;
-import org.slf4j.Logger;
+import org.spicord.log.Logger;
 
 import java.util.ArrayList;
 import java.util.EnumSet;

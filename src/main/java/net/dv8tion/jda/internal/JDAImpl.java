@@ -66,7 +66,7 @@ import net.dv8tion.jda.internal.utils.config.MetaConfig;
 import net.dv8tion.jda.internal.utils.config.SessionConfig;
 import net.dv8tion.jda.internal.utils.config.ThreadingConfig;
 import okhttp3.OkHttpClient;
-import org.slf4j.Logger;
+import org.spicord.log.Logger;
 import org.spicord.log.MDC;
 
 import javax.annotation.Nonnull;

@@ -12,11 +12,15 @@ public class LoggerFactory {
         spicordLogger = logger;
     }
 
-    public static org.slf4j.Logger getLogger(String name) {
+    public static org.spicord.log.Logger getLogger(String name) {
         if (spicordLogger == null) {
             return NOP;
         } else {
             return new LoggerImpl(spicordLogger, name);
         }
+    }
+
+    public static org.spicord.log.Logger getLogger(Class<?> clazz) {
+        return getLogger(clazz.getSimpleName());
     }
 }

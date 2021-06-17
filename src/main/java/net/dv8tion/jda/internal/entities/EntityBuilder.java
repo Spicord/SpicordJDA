@@ -48,7 +48,7 @@ import net.dv8tion.jda.internal.utils.cache.MemberCacheViewImpl;
 import net.dv8tion.jda.internal.utils.cache.SnowflakeCacheViewImpl;
 import org.apache.commons.collections4.CollectionUtils;
 import org.apache.commons.collections4.map.CaseInsensitiveMap;
-import org.slf4j.Logger;
+import org.spicord.log.Logger;
 
 import javax.annotation.Nullable;
 import java.time.Instant;

@@ -29,7 +29,7 @@ import net.dv8tion.jda.api.entities.Guild;
 import net.dv8tion.jda.api.entities.VoiceChannel;
 import net.dv8tion.jda.internal.utils.Checks;
 import net.dv8tion.jda.internal.utils.JDALogger;
-import org.slf4j.Logger;
+import org.spicord.log.Logger;
 
 import javax.annotation.Nonnull;
 import javax.annotation.Nullable;

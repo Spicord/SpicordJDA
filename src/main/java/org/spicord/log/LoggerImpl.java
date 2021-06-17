@@ -4,11 +4,7 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 import java.util.regex.Matcher;
 
-import org.slf4j.helpers.MarkerIgnoringBase;
-
-public final class LoggerImpl extends MarkerIgnoringBase {
-
-    private static final long serialVersionUID = 1L;
+public final class LoggerImpl implements org.spicord.log.Logger {
 
     private final Logger log;
     private final String prefix;

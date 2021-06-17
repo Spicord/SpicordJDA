@@ -30,7 +30,7 @@ import net.dv8tion.jda.internal.JDAImpl;
 import net.dv8tion.jda.internal.requests.MemberChunkManager;
 import net.dv8tion.jda.internal.requests.WebSocketClient;
 import net.dv8tion.jda.internal.utils.JDALogger;
-import org.slf4j.Logger;
+import org.spicord.log.Logger;
 
 import javax.annotation.Nullable;
 import java.util.HashSet;

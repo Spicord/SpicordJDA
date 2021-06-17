@@ -27,7 +27,7 @@ import net.dv8tion.jda.internal.requests.RestActionImpl;
 import net.dv8tion.jda.internal.requests.Route;
 import net.dv8tion.jda.internal.utils.JDALogger;
 import net.dv8tion.jda.internal.utils.tuple.Pair;
-import org.slf4j.Logger;
+import org.spicord.log.Logger;
 
 import javax.annotation.Nonnull;
 import javax.security.auth.login.LoginException;

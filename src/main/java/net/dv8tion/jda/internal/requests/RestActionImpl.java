@@ -30,7 +30,7 @@ import net.dv8tion.jda.internal.utils.Checks;
 import net.dv8tion.jda.internal.utils.JDALogger;
 import okhttp3.RequestBody;
 import org.apache.commons.collections4.map.CaseInsensitiveMap;
-import org.slf4j.Logger;
+import org.spicord.log.Logger;
 
 import javax.annotation.Nonnull;
 import javax.annotation.Nullable;

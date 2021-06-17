@@ -19,7 +19,7 @@ package net.dv8tion.jda.internal.utils;
 import com.neovisionaries.ws.client.WebSocketFactory;
 import okhttp3.*;
 import okio.Okio;
-import org.slf4j.Logger;
+import org.spicord.log.Logger;
 
 import java.io.*;
 import java.net.URI;
