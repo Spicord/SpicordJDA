@@ -18,7 +18,7 @@ package net.dv8tion.jda.api.audio.factory;
 
 import net.dv8tion.jda.internal.audio.AudioConnection;
 import net.dv8tion.jda.internal.utils.JDALogger;
-import org.slf4j.MDC;
+import org.spicord.log.MDC;
 
 import javax.annotation.CheckForNull;
 import java.net.DatagramPacket;

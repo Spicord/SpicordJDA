@@ -48,7 +48,7 @@ import net.dv8tion.jda.internal.utils.cache.AbstractCacheView;
 import net.dv8tion.jda.internal.utils.compress.Decompressor;
 import net.dv8tion.jda.internal.utils.compress.ZlibDecompressor;
 import org.slf4j.Logger;
-import org.slf4j.MDC;
+import org.spicord.log.MDC;
 
 import javax.annotation.Nonnull;
 import java.io.ByteArrayOutputStream;

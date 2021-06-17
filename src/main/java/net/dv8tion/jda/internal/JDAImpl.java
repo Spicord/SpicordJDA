@@ -67,7 +67,7 @@ import net.dv8tion.jda.internal.utils.config.SessionConfig;
 import net.dv8tion.jda.internal.utils.config.ThreadingConfig;
 import okhttp3.OkHttpClient;
 import org.slf4j.Logger;
-import org.slf4j.MDC;
+import org.spicord.log.MDC;
 
 import javax.annotation.Nonnull;
 import javax.security.auth.login.LoginException;

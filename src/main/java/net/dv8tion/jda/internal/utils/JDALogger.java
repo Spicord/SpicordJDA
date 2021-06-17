@@ -119,7 +119,7 @@ public class JDALogger
 //                return LoggerFactory.getLogger(clazz);
 //            return LOGS.computeIfAbsent(clazz.getName(), (n) -> new SimpleLogger(clazz.getSimpleName()));
 //        }
-        return getLog(clazz.getName());
+        return getLog(clazz.getSimpleName());
     }
 
     /**
